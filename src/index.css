@@ -1,0 +1,43 @@
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.calendar-day {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.calendar-day.today {
+  background-color: lightblue;
+}
+
+.event-item {
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+}
